@@ -9,6 +9,17 @@ use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\block\Block;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerDropItemEvent;
+<?php
+namespace BlusterySasha\LimitGM;
+
+use pocketmine\event\block\BlockPlaceEvent;
+use pocketmine\Player;
+use pocketmine\event\entity\EntityDamageByEntityEvent;
+use pocketmine\event\Listener;
+use pocketmine\event\player\PlayerDeathEvent;
+use pocketmine\block\Block;
+use pocketmine\plugin\PluginBase;
+use pocketmine\event\player\PlayerDropItemEvent;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\player\PlayerInteractEvent;
 
@@ -39,6 +50,7 @@ class Main extends PluginBase implements Listener{
         if ($player->isCreative()){
             if (in_array($blocks, $blacklist)){
                 $event->setCancelled();
+				$player->sendTip(self::PREFIX . "Данный блок был поставлен в креативе, он не выпал!");
                 return;
             }
         }
@@ -57,6 +69,7 @@ class Main extends PluginBase implements Listener{
     {
         $player = $event->getPlayer();
         if ($player->isCreative()){
+			$player->sendTip(self::PREFIX . "Данный блок был поставлен в креативе, он не выпал!");
             $event->setCancelled();
         }
     }
@@ -66,6 +79,7 @@ class Main extends PluginBase implements Listener{
             $player = $event->getDamager();
             if ($player instanceof Player){
                 if ($player->isCreative()) {
+					$player->sendTip(self::PREFIX . "Данный блок был поставлен в креативе, он не выпал!");
                     $event->setCancelled();
                 }
             }
