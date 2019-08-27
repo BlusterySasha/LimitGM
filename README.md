@@ -2,7 +2,7 @@
 
 [![](https://poggit.pmmp.io/shield.state/LimitGM)](https://poggit.pmmp.io/p/LimitGM)
 
-__What can this plugin do:__
+## __Features__
 - [x] A player in a creative cannot hit another player.
 - [x] A player in a creative cannot put some blocks (diamond block, diamond ore, emerald block, etc.).
 - [x] A player in a creative cannot interact with some objects, blocks (stoves, burning stoves, etc.).
@@ -11,11 +11,11 @@ __What can this plugin do:__
 - [x] Many other things...
 
 
-__What I need to do:__
+## __To do__
 - [ ] Plugin configuration.
 - [ ] Translation into other languages.
 
 
-__You can help me and donate:__
+## __Donate__
 - __QIWI: https://qiwi.me/soulmine__
 - __DonationAlerts: https://www.donationalerts.com/r/sashaandoleg__
