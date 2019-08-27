@@ -1,4 +1,5 @@
 # LimitGM
+
 [![](https://poggit.pmmp.io/SashaStr/LimitGM)](https://poggit.pmmp.io/p/LimitGM)
 
 __What can this plugin do:__
