@@ -1,6 +1,6 @@
 # LimitGM
 
-[![](https://poggit.pmmp.io/SashaStr/LimitGM)](https://poggit.pmmp.io/p/LimitGM)
+[![](https://poggit.pmmp.io/shield.state/LimitGM)](https://poggit.pmmp.io/p/LimitGM)
 
 __What can this plugin do:__
 - [x] A player in a creative cannot hit another player.
