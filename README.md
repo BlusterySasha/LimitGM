@@ -9,13 +9,12 @@ __What can this plugin do:__
 - [x] If a player in a creative dies in some way, then things will not fall out of him.
 - [x] Many other things...
 
+
 __What I need to do:__
 - [ ] Plugin configuration.
 - [ ] Translation into other languages.
 
+
 __You can help me and donate:__
 __QIWI: https://qiwi.me/soulmine__
 __DonationAlerts: https://www.donationalerts.com/r/sashaandoleg__
-
-[![Donate link](https://www.donationalerts.com/r/sashaandoleg)]
-
