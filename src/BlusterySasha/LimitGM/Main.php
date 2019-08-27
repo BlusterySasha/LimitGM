@@ -9,17 +9,6 @@ use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\block\Block;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerDropItemEvent;
-<?php
-namespace BlusterySasha\LimitGM;
-
-use pocketmine\event\block\BlockPlaceEvent;
-use pocketmine\Player;
-use pocketmine\event\entity\EntityDamageByEntityEvent;
-use pocketmine\event\Listener;
-use pocketmine\event\player\PlayerDeathEvent;
-use pocketmine\block\Block;
-use pocketmine\plugin\PluginBase;
-use pocketmine\event\player\PlayerDropItemEvent;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\player\PlayerInteractEvent;
 
