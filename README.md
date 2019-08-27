@@ -17,5 +17,5 @@ __You can help me and donate:__
 __QIWI: https://qiwi.me/soulmine__
 __DonationAlerts: https://www.donationalerts.com/r/sashaandoleg__
 
-[![](https://www.donationalerts.com/r/sashaandoleg)]
+[![Donate link](https://www.donationalerts.com/r/sashaandoleg)]
 
