@@ -12,6 +12,7 @@ __What can this plugin do:__
 
 
 __What I need to do:__
+- [ ] Make chat notifications for players in the creative (for example: you cannot hit other players in the creative).
 - [ ] Plugin configuration.
 - [ ] Translation into other languages.
 
