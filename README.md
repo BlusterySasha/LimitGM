@@ -16,5 +16,5 @@ __What I need to do:__
 
 
 __You can help me and donate:__
-__QIWI: https://qiwi.me/soulmine__
-__DonationAlerts: https://www.donationalerts.com/r/sashaandoleg__
+__QIWI: https://qiwi.me/soulmine (QIWI)__
+__DonationAlerts: https://www.donationalerts.com/r/sashaandoleg (DonationAlerts)__
