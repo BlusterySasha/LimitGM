@@ -39,7 +39,7 @@ class Main extends PluginBase implements Listener{
         if ($player->isCreative()){
             if (in_array($blocks, $blacklist)){
                 $event->setCancelled();
-				$player->sendTip(self::PREFIX . "Данный блок был поставлен в креативе, он не выпал!");
+				$player->sendTip("Данный блок был поставлен в креативе, он не выпал!");
                 return;
             }
         }
@@ -58,7 +58,7 @@ class Main extends PluginBase implements Listener{
     {
         $player = $event->getPlayer();
         if ($player->isCreative()){
-			$player->sendTip(self::PREFIX . "Данный блок был поставлен в креативе, он не выпал!");
+			$player->sendTip("Данный блок был поставлен в креативе, он не выпал!");
             $event->setCancelled();
         }
     }
@@ -68,7 +68,7 @@ class Main extends PluginBase implements Listener{
             $player = $event->getDamager();
             if ($player instanceof Player){
                 if ($player->isCreative()) {
-					$player->sendTip(self::PREFIX . "Данный блок был поставлен в креативе, он не выпал!");
+					$player->sendTip("Данный блок был поставлен в креативе, он не выпал!");
                     $event->setCancelled();
                 }
             }
