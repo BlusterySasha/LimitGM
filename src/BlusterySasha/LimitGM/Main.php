@@ -25,6 +25,7 @@ class Main extends PluginBase implements Listener{
         $blacklist = [Block::ENCHANTMENT_TABLE, Block::ANVIL, Block::ITEM_FRAME_BLOCK, Block::SHULKER_BOX, Block::TNT, Block::DIAMOND_BLOCK, Block::IRON_BLOCK, Block::LAPIS_BLOCK, Block::EMERALD_BLOCK, Block::COAL_BLOCK, Block::UNDYED_SHULKER_BOX, Block::DIAMOND_ORE, Block::QUARTZ_ORE, Block::EMERALD_ORE, Block::COAL_ORE, Block::REDSTONE_ORE, Block::LAPIS_ORE, Block::IRON_ORE, Block::GOLD_ORE, Block::GOLD_BLOCK, Block::OBSIDIAN, Block::BEDROCK, Block::END_PORTAL_FRAME, Block::PISTON, Block::STICKY_PISTON];
         if ($player->isCreative()){
             if (in_array($blocks, $blacklist)){
+				$player->sendTip("Вы не можете ставить этот блок в креативе!");
                 $event->setCancelled();
                 return;
             }
@@ -39,7 +40,7 @@ class Main extends PluginBase implements Listener{
         if ($player->isCreative()){
             if (in_array($blocks, $blacklist)){
                 $event->setCancelled();
-				$player->sendTip("Данный блок был поставлен в креативе, он не выпал!");
+				$player->sendTip("Вы не можете трогать этот блок в креативе!");
                 return;
             }
         }
@@ -51,6 +52,7 @@ class Main extends PluginBase implements Listener{
         if ($player->isCreative()){
             $player->getInventory()->clearAll();
             $player->getArmorInventory()->clearAll();
+			$player->sendTip("Вы погибли в креативе, вещи не выпали!");
         }
     }
 
@@ -58,7 +60,7 @@ class Main extends PluginBase implements Listener{
     {
         $player = $event->getPlayer();
         if ($player->isCreative()){
-			$player->sendTip("Данный блок был поставлен в креативе, он не выпал!");
+			$player->sendTip("Вы не можете выкидывать предметы в креативе!");
             $event->setCancelled();
         }
     }
@@ -68,7 +70,7 @@ class Main extends PluginBase implements Listener{
             $player = $event->getDamager();
             if ($player instanceof Player){
                 if ($player->isCreative()) {
-					$player->sendTip("Данный блок был поставлен в креативе, он не выпал!");
+					$player->sendTip("Вы не можете бить в креативе!");
                     $event->setCancelled();
                 }
             }
