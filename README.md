@@ -1,8 +1,8 @@
 # LimitGM
 
-| Poggit | HitCount | License |
+| HitCount | License | Poggit |
 |:--:|:--:|:--:|
-[![](https://poggit.pmmp.io/shield.state/LimitGM)(https://poggit.pmmp.io/p/LimitGM)|[![HitCount](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM.svg)|(http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM)[![GitHub license](https://img.shields.io/github/license/BlusterySasha-SoulMine/LimitGM.svg)|
+|[![HitCount](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM.svg)](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM)|[![GitHub license](https://img.shields.io/github/license/BlusterySasha-SoulMine/LimitGM.svg)](https://github.com/BlusterySasha-SoulMine/LimitGM/blob/master/LICENSE)|[![](https://poggit.pmmp.io/shield.state/LimitGM)](https://poggit.pmmp.io/p/LimitGM)|
 
 ## __Features__
 - [x] A player in a creative cannot hit another player.
