@@ -2,7 +2,7 @@
 
 | HitCount | License | Poggit | Download |
 |:--:|:--:|:--:|:--:|
-|[![HitCount](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM.svg)](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM)|[![GitHub license](https://img.shields.io/github/license/BlusterySasha-SoulMine/LimitGM.svg)](https://github.com/BlusterySasha-SoulMine/LimitGM/blob/master/LICENSE)|[![](https://poggit.pmmp.io/shield.state/LimitGM)](https://poggit.pmmp.io/p/LimitGM)|[![Download](https://img.shields.io/badge/Click%20to%20download-Download-green)](https://poggit.pmmp.io/r/65060/LimitGM.phar)|
+|[![HitCount](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM.svg)](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM)|[![GitHub license](https://img.shields.io/github/license/BlusterySasha-SoulMine/LimitGM.svg)](https://github.com/BlusterySasha-SoulMine/LimitGM/blob/master/LICENSE)|[![](https://poggit.pmmp.io/shield.state/LimitGM)](https://poggit.pmmp.io/p/LimitGM)|[![Download](https://img.shields.io/badge/Download-.phar-green)](https://poggit.pmmp.io/r/65060/LimitGM.phar)|
 
 ## __Features__
 - [x] A player in a creative cannot hit another player.
