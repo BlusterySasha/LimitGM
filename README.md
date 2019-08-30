@@ -1,6 +1,8 @@
 # LimitGM
 
-[![](https://poggit.pmmp.io/shield.state/LimitGM)](https://poggit.pmmp.io/p/LimitGM)
+| HitCount | License | Poggit | Download |
+|:--:|:--:|:--:|:--:|
+|[![HitCount](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM.svg)](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM)|[![GitHub license](https://img.shields.io/github/license/BlusterySasha-SoulMine/LimitGM.svg)](https://github.com/BlusterySasha-SoulMine/LimitGM/blob/master/LICENSE)|[![](https://poggit.pmmp.io/shield.state/LimitGM)](https://poggit.pmmp.io/p/LimitGM)|[![Download](https://img.shields.io/badge/Download-.phar-green)](https://poggit.pmmp.io/r/65060/LimitGM.phar)|
 
 ## __Features__
 - [x] A player in a creative cannot hit another player.
@@ -19,3 +21,9 @@
 ## __Donate__
 - __QIWI: https://qiwi.me/soulmine__
 - __DonationAlerts: https://www.donationalerts.com/r/sashaandoleg__
+- __TradeMC: https://soulmine-shop.trademc.org__
+
+## __About__
+- __VK: https://vk.com/blusterysasha__
+- __VK server: https://vk.com/soulmine__
+- __Facebook: SOON...__
