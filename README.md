@@ -21,3 +21,9 @@
 ## __Donate__
 - __QIWI: https://qiwi.me/soulmine__
 - __DonationAlerts: https://www.donationalerts.com/r/sashaandoleg__
+- __TradeMC: https://soulmine-shop.trademc.org__
+
+## __About__
+- __VK: https://vk.com/blusterysasha__
+- __VK server: https://vk.com/soulmine__
+- __Facebook: SOON...__
