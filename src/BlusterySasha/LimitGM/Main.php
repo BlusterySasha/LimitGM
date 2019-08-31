@@ -33,6 +33,18 @@ class Main extends PluginBase implements Listener{
     }
 
 
+    public function onGameModeChange(PlayerGameModeChangeEvent $event){
+        $player = $event->getPlayer();
+        $newGM = $event->getNewGamemode();
+        if ($newGM === 0){
+            $player->getInventory()->clearAll();
+            $player->getArmorInventory()->clearAll();
+			$player->sendTip("§l§7Ващи вещи были очищены!");
+            return;
+        }
+    }
+
+
     public function onInteract(PlayerInteractEvent $event){
         $player = $event->getPlayer();
         $blocks = $event->getBlock()->getId();
