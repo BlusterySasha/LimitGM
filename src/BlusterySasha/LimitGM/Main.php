@@ -11,6 +11,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerDropItemEvent;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\player\PlayerInteractEvent;
+use pocketmine\event\player\PlayerGameModeChangeEvent;
 
 class Main extends PluginBase implements Listener{
 
@@ -39,7 +40,7 @@ class Main extends PluginBase implements Listener{
         if ($newGM === 0){
             $player->getInventory()->clearAll();
             $player->getArmorInventory()->clearAll();
-			$player->sendTip("§l§7Ващи вещи были очищены!");
+			$player->sendTip("§l§7Ваши вещи были очищены!");
             return;
         }
     }
