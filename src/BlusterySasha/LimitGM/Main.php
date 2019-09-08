@@ -6,7 +6,6 @@ use pocketmine\Player;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerDeathEvent;
-use pocketmine\event\player\PlayerItemConsumeEvent;
 use pocketmine\block\Block;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerDropItemEvent;
@@ -55,20 +54,6 @@ class Main extends PluginBase implements Listener{
             if (in_array($blocks, $blacklist)){
                 $event->setCancelled();
 				$player->sendTip("§l§7Вы не можете трогать этот блок в креативе!");
-                return;
-            }
-        }
-    }
-
-
-    public function onEat(PlayerItemConsumeEvent $event){
-        $player = $event->getPlayer();
-        $blocks = $event->getItem()->getId();
-        $blacklist = [Item::BOTTLE_O_ENCHANTING, Item::GOLDEN_APPLE, Item::ENCHANTED_GOLDEN_APPLE];
-        if ($player->isCreative()){
-            if (in_array($blocks, $blacklist)){
-				$player->sendTip("§l§7Вы не можете использовать это в креативе!");
-                $event->setCancelled();
                 return;
             }
         }
