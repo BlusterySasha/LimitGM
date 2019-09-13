@@ -18,6 +18,7 @@ class Main extends PluginBase implements Listener{
 
     public function onEnable()
     {
+	$this->getLogger()->info("Плагин запущен.");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
 
