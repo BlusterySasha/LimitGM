@@ -4,9 +4,9 @@ __Important__:
 - [x] You must have the "DEVirion" plugin. [Download here.](https://poggit.pmmp.io/p/DEVirion)
 - [x] You must have the "UpdateNotifer" virion (to the virions folder). [Download here.](https://poggit.pmmp.io/ci/JackMD/UpdateNotifier/UpdateNotifier)
 
-| HitCount | License | Poggit | Download |
+| HitCount | License | Poggit |
 |:--:|:--:|:--:|:--:|
-|[![HitCount](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM.svg)](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM)|[![GitHub license](https://img.shields.io/github/license/BlusterySasha-SoulMine/LimitGM.svg)](https://github.com/BlusterySasha-SoulMine/LimitGM/blob/master/LICENSE)|[![](https://poggit.pmmp.io/shield.state/LimitGM)](https://poggit.pmmp.io/p/LimitGM)|[![Download](https://img.shields.io/badge/Download-.phar-green)](https://poggit.pmmp.io/r/65646/LimitGM.phar)|
+|[![HitCount](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM.svg)](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM)|[![GitHub license](https://img.shields.io/github/license/BlusterySasha-SoulMine/LimitGM.svg)](https://github.com/BlusterySasha-SoulMine/LimitGM/blob/master/LICENSE)|[![](https://poggit.pmmp.io/shield.state/LimitGM)](https://poggit.pmmp.io/p/LimitGM)
 
 ## __Features__
 - [x] A player in a creative cannot hit another player.
