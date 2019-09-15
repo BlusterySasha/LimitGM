@@ -39,7 +39,6 @@ class Main extends PluginBase implements Listener{
     function onLoad( )
 	{
 		UpdateNotifier::checkUpdate($this, $this->getName(), $this->getDescription()->getVersion());
-		$this->loadInstance();
 	}
 
 
