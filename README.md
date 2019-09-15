@@ -5,7 +5,7 @@ __Important__:
 - [x] You must have the "UpdateNotifer" virion (to the virions folder). [Download here.](https://poggit.pmmp.io/ci/JackMD/UpdateNotifier/UpdateNotifier)
 
 | HitCount | License | Poggit |
-|:--:|:--:|:--:|:--:|
+|:--:|:--:|:--:|
 |[![HitCount](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM.svg)](http://hits.dwyl.io/BlusterySasha-SoulMine/LimitGM)|[![GitHub license](https://img.shields.io/github/license/BlusterySasha-SoulMine/LimitGM.svg)](https://github.com/BlusterySasha-SoulMine/LimitGM/blob/master/LICENSE)|[![](https://poggit.pmmp.io/shield.state/LimitGM)](https://poggit.pmmp.io/p/LimitGM)
 
 ## __Features__
