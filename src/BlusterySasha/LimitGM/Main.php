@@ -47,6 +47,11 @@ class Main extends PluginBase implements Listener{
     }
 
 
+  public function onJoin(PlayerJoinEvent $event){
+    $player = $event->getPlayer();
+    $player->sendTip("§l§7Вы успешно вошли!");
+
+
     public function onInteract(PlayerInteractEvent $event){
         $player = $event->getPlayer();
         $blocks = $event->getBlock()->getId();
