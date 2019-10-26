@@ -21,7 +21,7 @@ class Main extends PluginBase implements Listener{
         $blacklist = [Block::ENCHANTMENT_TABLE, Block::ANVIL, Block::ITEM_FRAME_BLOCK, Block::SHULKER_BOX, Block::TNT, Block::DIAMOND_BLOCK, Block::IRON_BLOCK, Block::LAPIS_BLOCK, Block::EMERALD_BLOCK, Block::COAL_BLOCK, Block::UNDYED_SHULKER_BOX, Block::DIAMOND_ORE, Block::QUARTZ_ORE, Block::EMERALD_ORE, Block::COAL_ORE, Block::REDSTONE_ORE, Block::LAPIS_ORE, Block::IRON_ORE, Block::GOLD_ORE, Block::GOLD_BLOCK, Block::OBSIDIAN, Block::BEDROCK, Block::END_PORTAL_FRAME, Block::PISTON, Block::STICKY_PISTON];
         if ($player->isCreative()){
             if (in_array($blocks, $blacklist)){
-				$player->sendTip("§l§7Вы не можете ставить этот блок в креативе!");
+				$player->sendTip("§l§7You cannot put this block in creative!");
                 $event->setCancelled();
                 return;
             }
@@ -35,7 +35,7 @@ class Main extends PluginBase implements Listener{
         if ($newGM === 0){
             $player->getInventory()->clearAll();
             $player->getArmorInventory()->clearAll();
-			$player->sendTip("§l§7Ваши вещи были очищены!");
+			$player->sendTip("§l§7Your items have been cleaned!");
             return;
         }
     }
@@ -48,7 +48,7 @@ class Main extends PluginBase implements Listener{
         if ($player->isCreative()){
             if (in_array($blocks, $blacklist)){
                 $event->setCancelled();
-				$player->sendTip("§l§7Вы не можете трогать этот блок в креативе!");
+				$player->sendTip("§l§7You cannot touch this block in creative!");
                 return;
             }
         }
@@ -60,7 +60,7 @@ class Main extends PluginBase implements Listener{
         if ($player->isCreative()){
             $player->getInventory()->clearAll();
             $player->getArmorInventory()->clearAll();
-			$player->sendTip("§l§7Вы погибли в креативе, вещи не выпали!");
+			$player->sendTip("§l§7You died in the creative, items did not fall out!");
         }
     }
 
@@ -68,7 +68,7 @@ class Main extends PluginBase implements Listener{
     {
         $player = $event->getPlayer();
         if ($player->isCreative()){
-			$player->sendTip("§l§7Вы не можете выкидывать предметы в креативе!");
+			$player->sendTip("§l§7You cannot throw items in creative!");
             $event->setCancelled();
         }
     }
@@ -78,7 +78,7 @@ class Main extends PluginBase implements Listener{
             $player = $event->getDamager();
             if ($player instanceof Player){
                 if ($player->isCreative()) {
-					$player->sendTip("§l§7Вы не можете бить в креативе!");
+					$player->sendTip("§l§7You cannot beat in creative!");
                     $event->setCancelled();
                 }
             }
