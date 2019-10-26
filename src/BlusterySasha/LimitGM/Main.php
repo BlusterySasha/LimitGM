@@ -15,12 +15,6 @@ use pocketmine\event\player\PlayerGameModeChangeEvent;
 
 class Main extends PluginBase implements Listener{
 
-    public function onEnable()
-    {
-	$this->getLogger()->info("Плагин запущен. Версия: 0.1.7.");
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
-    }
-
 	public function onPlace(BlockPlaceEvent $event){
         $player = $event->getPlayer();
         $blocks = $event->getBlock()->getId();
@@ -45,11 +39,6 @@ class Main extends PluginBase implements Listener{
             return;
         }
     }
-
-
-  public function onJoin(PlayerJoinEvent $event){
-    $player = $event->getPlayer();
-    $player->sendTip("§l§7Вы успешно вошли!");
 
 
     public function onInteract(PlayerInteractEvent $event){
