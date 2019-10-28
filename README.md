@@ -16,6 +16,8 @@
 ## __To do__
 - [ ] Plugin configuration.
 - [ ] Translation into other languages.
+- [ ] Saving things from survival.
+- Please submit ideas.
 
 
 ## __About__
