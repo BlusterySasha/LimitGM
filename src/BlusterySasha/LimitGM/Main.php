@@ -61,16 +61,11 @@ class Main extends PluginBase implements Listener{
             $player->dataPacket($pk);
             return;
         }
-    }
-
-    public function onGameModeChange(PlayerGameModeChangeEvent $event){
-        $player = $event->getPlayer();
-        $newGM = $event->getNewGamemode();
-        if ($newGM === 1){
+		if ($newGM === 1){
 	        $player->sendTip("§l§7Upon transition to survival, things will be cleared.");
 			$player->addTitle("§c§lWarning§7!", " ");
             return;
-        }
+		}
     }
 
     public function onInteract(PlayerInteractEvent $event){
