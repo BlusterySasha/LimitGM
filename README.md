@@ -13,7 +13,9 @@
 - [x] Many other things...
 
 
-## __To do__
+## __To-do__
+- [ ] Restart the plugin using the "/limitgm" command.
+- [ ] Disabling or enabling protection modules using the "/limitgm" command.
 - [ ] Plugin configuration.
 - [ ] Translation into other languages.
 - [ ] Saving things from survival.
@@ -22,5 +24,4 @@
 
 ## __About__
 - __VK: https://vk.com/blusterysasha__
-- __VK server: https://vk.com/soulmine__
-- __Facebook: SOON...__
+- __VK server: https://vk.com/soulmine_java__
