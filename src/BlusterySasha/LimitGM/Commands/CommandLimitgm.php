@@ -14,10 +14,10 @@ class CommandLimitgm extends Command{
 		public function execute(CommandSender $sender, $label, array $args){
 			if($sender instanceof Player){
 				$player = $sender;
-				$player->sendMessage("§6Плагин работает, всё хорошо!");
-				$player->addTitle("§2Скоро будут новые функции, смотрите консоль.");
+				$player->sendMessage("§6The plugin works, everything is fine! More features coming soon, expect new updates.");
+				$player->addTitle("§2I'm working.");
 				}else{
-					$sender->sendMessage("§cОшибка, не изменяйте плагин.");
+					$sender->sendMessage("§cThis command works only from the player.");
 				}
 		}
 }
