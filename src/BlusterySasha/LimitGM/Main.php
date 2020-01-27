@@ -13,16 +13,14 @@ use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\network\mcpe\protocol\PlaySoundPacket;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\event\player\PlayerGameModeChangeEvent;
+use BlusterySasha\LimitGM\Commands\CommandLimitgm;
 
 class Main extends PluginBase implements Listener{
 
-	public function onEnable()
-    {
+	public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
-    $this->getLogger()->notice("Лучший сервер - SoulMine")
-    $this->getLogger()->notice("Адрес и сайт: SMine.ml")
-    $this->getLogger()->notice("Порт: 19132")
-    $this->getLogger()->warning("Плагин запущен")
+	$this->getLogger()->warning("Возможно, что версия плагина устарела. Установите последнюю: https://github.com/BlusterySasha-SoulMine/LimitGM (GitHub).")
+    $this->getLogger()->notice("Плагин запущен успешно!")
     }
 
 	public function onPlace(BlockPlaceEvent $event){
@@ -47,7 +45,7 @@ class Main extends PluginBase implements Listener{
         }
     }
 
-    public function onGameModeChange(PlayerGameModeChangeEvent $event){
+    public function onPlayerGameModeChange(PlayerGameModeChangeEvent $event){
         $player = $event->getPlayer();
         $newGM = $event->getNewGamemode();
         if ($newGM === 0){
@@ -66,7 +64,7 @@ class Main extends PluginBase implements Listener{
             return;
         }
 		if ($newGM === 1){
-	        $player->sendTip("§l§7Ваши вещи будут очищены, если вы перейдёте в креатив.");
+	        $player->sendTip("§l§7Ваши вещи будут очищены, если Вы перейдёте в творческий режим.");
 			$player->addTitle("§c§lПредупреждение§7!", " ");
             return;
 		}
@@ -78,7 +76,7 @@ class Main extends PluginBase implements Listener{
         $blacklist = [Block::ENDER_CHEST, Block::CRAFTING_TABLE, Block::CHEST, Block::FURNACE, Block::BURNING_FURNACE, Block::TRAPPED_CHEST, Block::ENCHANTMENT_TABLE, Block::ANVIL, Block::ITEM_FRAME_BLOCK, Block::SHULKER_BOX, Block::TNT, Block::DROPPER, Block::DISPENSER, Block::UNDYED_SHULKER_BOX];
         if ($player->isCreative()){
             if (in_array($blocks, $blacklist)){
-				$player->sendTip("§l§7Данный блок запрещён в креативе.");
+				$player->sendTip("§l§7Данный блок запрещён в творческом режиме.");
 				$player->addTitle("§e§lЗащищено§7!", " ");
 				$pk = new PlaySoundPacket();
 				$pk->x = $player->getX();
@@ -99,7 +97,7 @@ class Main extends PluginBase implements Listener{
         if ($player->isCreative()){
             $player->getInventory()->clearAll();
             $player->getArmorInventory()->clearAll();
-			$player->sendTip("§l§7Ваши вещи не выпали, вы в креативе.");
+			$player->sendTip("§l§7Ваши вещи не выпали, Вы в творческом режиме.");
 			$player->addTitle("§e§lЗащищено§7!", " ");
 			$pk = new PlaySoundPacket();
             $pk->x = $player->getX();
@@ -116,7 +114,7 @@ class Main extends PluginBase implements Listener{
     {
         $player = $event->getPlayer();
         if ($player->isCreative()){
-	        $player->sendTip("§l§7Вы не можете выбрасывать вещи в креативе.");
+	        $player->sendTip("§l§7Вы не можете выбрасывать вещи в творческом режиме.");
 			$player->addTitle("§e§lЗащищено§7!", " ");
 			$pk = new PlaySoundPacket();
             $pk->x = $player->getX();
@@ -135,7 +133,7 @@ class Main extends PluginBase implements Listener{
             $player = $event->getDamager();
             if ($player instanceof Player){
                 if ($player->isCreative()) {
-					$player->sendTip("§l§7Вы не можете бить в креативе.");
+					$player->sendTip("§l§7Вы не можете бить в творческом режиме.");
 					$player->addTitle("§e§lЗащищено§7!", " ");
 					$pk = new PlaySoundPacket();
 					$pk->x = $player->getX();
@@ -150,6 +148,10 @@ class Main extends PluginBase implements Listener{
             }
         }
     }
+
+	private function registerCommands(){
+		$this->getServer()->getCommandMap()->register("limitgm", new SoulMine());
+	}
 
 
 
