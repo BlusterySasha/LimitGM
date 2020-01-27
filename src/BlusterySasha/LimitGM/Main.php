@@ -17,20 +17,14 @@ use BlusterySasha\LimitGM\Commands\CommandLimitgm;
 
 class Main extends PluginBase implements Listener{
 
-	public function onEnable(){
-    $this->getServer()->getPluginManager()->registerEvents($this, $this);
-	$this->getLogger()->warning("Возможно, что версия плагина устарела. Установите последнюю: https://github.com/BlusterySasha-SoulMine/LimitGM (GitHub).")
-    $this->getLogger()->notice("Плагин запущен успешно!")
-    }
-
 	public function onPlace(BlockPlaceEvent $event){
         $player = $event->getPlayer();
         $blocks = $event->getBlock()->getId();
         $blacklist = [Block::ENCHANTMENT_TABLE, Block::ANVIL, Block::ITEM_FRAME_BLOCK, Block::SHULKER_BOX, Block::TNT, Block::DIAMOND_BLOCK, Block::IRON_BLOCK, Block::LAPIS_BLOCK, Block::EMERALD_BLOCK, Block::COAL_BLOCK, Block::UNDYED_SHULKER_BOX, Block::DIAMOND_ORE, Block::QUARTZ_ORE, Block::EMERALD_ORE, Block::COAL_ORE, Block::REDSTONE_ORE, Block::LAPIS_ORE, Block::IRON_ORE, Block::GOLD_ORE, Block::GOLD_BLOCK, Block::OBSIDIAN, Block::BEDROCK, Block::END_PORTAL_FRAME, Block::PISTON, Block::STICKY_PISTON];
         if ($player->isCreative()){
             if (in_array($blocks, $blacklist)){
-				$player->sendTip("§l§7Вы не можете ставить данный блок в креативе.");
-				$player->addTitle("§e§lЗащищено§7!", " ");
+				$player->sendTip("§l§7You cannot put this block in creative.");
+				$player->addTitle("§e§lProtected§7!", " ");
                 $event->setCancelled();
                 $pk = new PlaySoundPacket();
                 $pk->x = $player->getX();
@@ -64,8 +58,8 @@ class Main extends PluginBase implements Listener{
             return;
         }
 		if ($newGM === 1){
-	        $player->sendTip("§l§7Ваши вещи будут очищены, если Вы перейдёте в творческий режим.");
-			$player->addTitle("§c§lПредупреждение§7!", " ");
+	        $player->sendTip("§l§7Your items will be cleaned if you switch to creative mode.");
+			$player->addTitle("§c§lWarning§7!", " ");
             return;
 		}
     }
@@ -76,8 +70,8 @@ class Main extends PluginBase implements Listener{
         $blacklist = [Block::ENDER_CHEST, Block::CRAFTING_TABLE, Block::CHEST, Block::FURNACE, Block::BURNING_FURNACE, Block::TRAPPED_CHEST, Block::ENCHANTMENT_TABLE, Block::ANVIL, Block::ITEM_FRAME_BLOCK, Block::SHULKER_BOX, Block::TNT, Block::DROPPER, Block::DISPENSER, Block::UNDYED_SHULKER_BOX];
         if ($player->isCreative()){
             if (in_array($blocks, $blacklist)){
-				$player->sendTip("§l§7Данный блок запрещён в творческом режиме.");
-				$player->addTitle("§e§lЗащищено§7!", " ");
+				$player->sendTip("§l§7This block is prohibited in creative mode.");
+				$player->addTitle("§e§lProtected§7!", " ");
 				$pk = new PlaySoundPacket();
 				$pk->x = $player->getX();
 				$pk->y = $player->getY();
@@ -97,8 +91,8 @@ class Main extends PluginBase implements Listener{
         if ($player->isCreative()){
             $player->getInventory()->clearAll();
             $player->getArmorInventory()->clearAll();
-			$player->sendTip("§l§7Ваши вещи не выпали, Вы в творческом режиме.");
-			$player->addTitle("§e§lЗащищено§7!", " ");
+			$player->sendTip("§l§7Your things didn’t fall out, you are in creative mode.");
+			$player->addTitle("§e§lProtected§7!", " ");
 			$pk = new PlaySoundPacket();
             $pk->x = $player->getX();
             $pk->y = $player->getY();
@@ -133,8 +127,8 @@ class Main extends PluginBase implements Listener{
             $player = $event->getDamager();
             if ($player instanceof Player){
                 if ($player->isCreative()) {
-					$player->sendTip("§l§7Вы не можете бить в творческом режиме.");
-					$player->addTitle("§e§lЗащищено§7!", " ");
+					$player->sendTip("§l§7You cannot drop items in creative mode.");
+					$player->addTitle("§e§lProtected§7!", " ");
 					$pk = new PlaySoundPacket();
 					$pk->x = $player->getX();
 					$pk->y = $player->getY();
