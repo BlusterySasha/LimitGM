@@ -1,6 +1,6 @@
 name: LimitGM
 main: BlusterySasha\LimitGM\Main
-version: 1.0.0 # Новая версия - 1.0.0!
+version: 1.0.0 # New version - 1.0.0!
 api: 3.0.0
 author: BlusterySasha
-description: Ограничить творческий режим для других игроков.
+description: Limit creative mode to players on your server.
